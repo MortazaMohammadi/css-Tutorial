@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin: 0;
+    font-size:auto;
+    box-sizing:border-box;
+}
+
+/* 
+display property
+block, inline, inline-block, none
+block: takes full width available, starts on a new line allow setting width and height
+inline: takes only as much width as necessary, does not start on a new line
+inline-block: behaves like an inline element but allows setting width and height
+none: element is not displayed at all
+*/
+.block-box{
+    background-color: lightblue;
+    border: 2px solid navy;
+    padding: 20px;
+    margin: 20px;
+    /* width: 300px; */
+    height: 100px;
+    display: block; /* Block element */
+}
+.inline-box{
+    background-color: lightgreen;
+    border: 2px solid green;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    display: inline; /* Inline element */
+   
+}
+.inline-block-box{
+    background-color: lightcoral;
+    border: 2px solid red;
+    padding: 15px;
+    margin: 15px;
+    /* width:300px;
+    height: 100px; */
+    display: inline-block; /* Inline-block element */
+}
+.none-box{
+    background-color: rgb(32, 147, 205);
+    border: 2px solid gray;
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    height: 100px;
+    display: none; /* No display */
+}
+
+.block-tags{
+    background-color: lightseagreen;
+    /* padding: top right bottom left;  : clock wise from top start also the same in margin */
+    padding: 10px 0px 10px 0px;
+    box-sizing: content-box;
+
+    margin:10px;
+    width: 600px;
+}
+.inline-tags{
+    background-color: lightpink;
+    padding:10px;
+    box-sizing: border-box;
+
+    margin:10px;
+    width: 600px;
+}
+.inline-block-tags{
+    background-color:aquamarine;
+    padding: 10px;
+    box-sizing: border-box;
+    margin:10px;
+    width:600px;
+    
+}

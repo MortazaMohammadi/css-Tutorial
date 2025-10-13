@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margin: 0;
+    font-size:auto;
+}
+
+ /* content-box vs border-box
+    content-box is default value of box-sizing
+    content-box: width and height include only the content, padding and border are added outside
+    border-box: width and height include content, padding and border
+    */
+
+ /* 
+    margin dont consider the margin of the top 
+    it consider the element
+    example we hade for both margin 60 but here look it is not getting 120 it got 60
+ */
+
+.box-one{
+    background-color: brown;
+    border:30px solid black;
+    border-radius: 0.3rem;
+
+
+    padding: 20px;
+    margin: 60px;
+
+    box-sizing: content-box;
+    width: 100px;
+    height: 100px;
+}
+
+.box-two{
+    background-color: #fff;
+    border: 20px solid blue;
+    border-radius: 5px;
+
+    margin: 60px; 
+    padding:20px;
+
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+
+}
+

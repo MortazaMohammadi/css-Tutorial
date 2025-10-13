@@ -2,6 +2,7 @@
     padding:0;
     margin: 0;
     font-size:auto;
+    box-sizing:border-box;
 }
 
 .box-one{
@@ -9,6 +10,8 @@
     border:30px solid black;
     padding: 20px;
     margin: 60px;
+
+    box-sizing: content-box;
 }
 
 .box-two{
@@ -18,6 +21,7 @@
     it consider the element
     example we hade for both margin 60 but here look it is not getting 120 it got 60
      */
+    box-sizing: border-box;
     margin: 60px; 
     padding:20px;
 }
