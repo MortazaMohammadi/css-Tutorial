@@ -76,3 +76,95 @@ none: element is not displayed at all
     width:600px;
     
 }
+
+
+.exercise-box{
+    display:block;
+    box-sizing: border-box;
+    background-color: rgb(231, 244, 247);
+    padding:0;
+    margin: 5px 0 5px 0;
+    
+}
+
+.row-flex-box{
+    display: flex;
+    gap: 2rem;
+    height: 100px;
+    flex-direction: row; /* Row direction is default */
+    /* justify-content: center; horizontal alignment: values: (flex-start, flex-end. center, space-betweeen, evently and ) */
+    /* align-items: center; vertical alignment */
+
+}
+.row-flex-box li:first-child{
+    align-self: center;
+ 
+}
+.row-flex-box li:nth-child(2){
+    align-self: flex-end;
+
+}
+.row-flex-box li:nth-child(4)
+{
+    align-self: center;
+}
+
+.column-flex-box{
+    display: flex;
+    flex-direction: column; /* Column direction */
+    gap: 2rem;
+    height: 190px;
+    justify-content: center; /* Vertical alignment: values: (flex-start, flex-end. center, space-betweeen, evently and ) */
+    align-items: flex-start;/* Horizontal alignment */
+
+}
+/* .column-flex-box li:nth-child(1){
+    align-self: start;
+}
+.column-flex-box li:nth-child(2){
+    align-self: center;align
+}
+.column-flex-box li:nth-child(3){
+    align-self: flex-end;
+}
+.column-flex-box li:nth-child(4){
+    align-self: stretch;
+} */
+
+
+.nav{
+    display: flex;
+    top:0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    background-color: rgb(58, 97, 131);
+    color:aliceblue;
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.brand{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn{
+    border: 2px solid rgb(127, 228, 223);
+    border-radius: 0.3rem;
+    padding: 7px 20px 7px 20px;
+    background-color: inherit;
+    color:aliceblue
+}
+.btn:hover{
+    border-color:  rgb(20, 70, 67);
+   
+}
