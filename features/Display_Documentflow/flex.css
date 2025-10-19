@@ -1,0 +1,42 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 20%);
+    min-width: auto;
+    max-width: 1000;
+    min-height: 100px;
+    max-height: 1000px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.flex-row h2 {
+    /* min-width: fit-content; */
+    flex: 0 1 auto;
+    align-self: flex-end;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.item {
+  height: 50px;
+  background-color: blue;
+  flex: 1 1 300px; /* این آیتم‌ها به اندازه 300px شروع می‌شوند و می‌توانند رشد یا کوچک شوند */
+  align-self: center; /* آیتم‌ها در ابتدای عمودی قرار می‌گیرند */
+  order: 1; /* ترتیب آیتم‌ها تغییر می‌کند */
+}
+.item:nth-child(2) {
+  order: 2; /* آیتم دوم به انتهای لیست می‌رود */
+}
+.item:nth-child(3) {
+  order: 0; /* آیتم سوم به ابتدای لیست می‌رود */
+}
